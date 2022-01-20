@@ -19,7 +19,9 @@ const Footer = () => {
           borderRadius="80px"
           padding="0.29rem"
         >
-          <Image src={Gmail} w="41.13px" />
+          <a rel="noreferrer" target="_blank" href="">
+            <Image src={Gmail} w="41.13px" />
+          </a>
         </Box>
         <Box
           width="fit-content"
@@ -27,7 +29,13 @@ const Footer = () => {
           borderRadius="80px"
           padding="0.7rem"
         >
-          <Image src={Linkedin} w="28px" />
+          <a
+            href="https://www.linkedin.com/in/rafael-padua-corona/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <Image src={Linkedin} w="28px" />
+          </a>
         </Box>
         <Box
           width="fit-content"
@@ -35,7 +43,13 @@ const Footer = () => {
           borderRadius="100%"
           padding="0.29rem"
         >
-          <Image src={GitHub} w="41.13px" />
+          <a
+            href="https://github.com/rafaelpadu/rafaelpadu"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <Image src={GitHub} w="41.13px" />
+          </a>
         </Box>
       </Box>
       <Center marginBottom="1.2rem">

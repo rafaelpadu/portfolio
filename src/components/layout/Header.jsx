@@ -1,6 +1,7 @@
 import { Box, Button, Heading } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
+import PersonalButton from "./Button";
 const Header = () => {
   return (
     <header>
@@ -20,7 +21,11 @@ const Header = () => {
         >
           <Link to="/">
             <Heading fontSize="lg" fontFamily="h1">
-              <Button variant="unstyled" color="white.50">
+              <Button
+                variant="unstyled"
+                color="white.50"
+                _focus={{ outlineStyle: "none" }}
+              >
                 Home
               </Button>
             </Heading>
@@ -33,23 +38,24 @@ const Header = () => {
           w="30%"
           height="100px"
         >
-          <Link to="/projects">
+          <Link to="/projetos">
             <Heading as="a" fontSize="lg" fontFamily="h1">
-              <Button variant="unstyled" color="white.50">
+              <Button
+                variant="unstyled"
+                color="white.50"
+                _focus={{ outlineStyle: "none" }}
+              >
                 Projects
               </Button>
             </Heading>
           </Link>
-          <Link to="/contact">
+          <Link to="/contato">
             <Heading as="a" fontSize="lg" fontFamily="h1">
-              <Button
+              <PersonalButton
                 variant="ghost"
-                color="black.50"
-                _hover={{ color: "black", bg: "white.50" }}
-                bgGradient="linear(to-r, firstGrad.500, secondGrad.500)"
-              >
-                Contact
-              </Button>
+                type="button"
+                buttonText="Contato"
+              />
             </Heading>
           </Link>
         </Box>

@@ -5,7 +5,13 @@ import ProjectsContainer from "./ProjectsContainer";
 const MidContainer = () => {
   return (
     <Box marginTop={143}>
-      <Heading as="h3" fontFamily="h1" color="white.60" fontSize="3xl">
+      <Heading
+        id="about-me"
+        as="h3"
+        fontFamily="h1"
+        color="white.60"
+        fontSize="3xl"
+      >
         Sobre mim
       </Heading>
       <Box

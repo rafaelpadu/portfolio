@@ -1,6 +1,5 @@
 import { Box, Heading, Image, Text, Center } from "@chakra-ui/react";
 import React from "react";
-import Img from "../../../assets/image.png";
 const ProjectBox = ({ title, text, stacks, imgSrc }) => {
   return (
     <Box
@@ -10,7 +9,13 @@ const ProjectBox = ({ title, text, stacks, imgSrc }) => {
       margin="3rem 1rem 1rem 0"
       borderRadius="7px"
     >
-      <Image src={Img} maxWidth="100%" marginTop="15px" />
+      <img
+        src={imgSrc}
+        maxWidth="fit-content"
+        width="100%"
+        marginTop="15px"
+        alt={`${title}-imagem`}
+      />
       <Heading
         as="h4"
         fontSize="xl"

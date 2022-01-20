@@ -2,7 +2,7 @@ import { Box, Heading, Text, Button, Image } from "@chakra-ui/react";
 import { ArrowDownIcon } from "@chakra-ui/icons";
 import React from "react";
 import Img from "../../../assets/Boy With Glasses.svg";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 const FrontContainer = () => {
   return (
     <div>
@@ -58,8 +58,16 @@ const FrontContainer = () => {
         </Box>
       </Box>
       <Box width="100%" display="flex" justifyContent="center" marginTop="9rem">
-        <Button variant="link">
-          <ArrowDownIcon h={12} w={12} color="white.50" />
+        <Button variant="link" _focus={{ outlineStyle: "none" }}>
+          <Link
+            to="about-me"
+            smooth={true}
+            offset={-70}
+            duration={500}
+            spy={true}
+          >
+            <ArrowDownIcon h={12} w={12} color="white.50" />
+          </Link>
         </Button>
       </Box>
     </div>
