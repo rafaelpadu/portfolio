@@ -13,7 +13,7 @@ import {
 import PersonalButton from "../layout/Button";
 import { init, send } from "emailjs-com";
 import { useNavigate } from "react-router-dom";
-init("user_YHzRUGsIOTMVvL2FplPOT");
+init(process.env.REACT_APP_EMAIL_JS);
 
 const inialState = {
   name: "",
